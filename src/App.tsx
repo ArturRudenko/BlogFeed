@@ -8,7 +8,7 @@ import {DEFAULT_USER_ID} from "./utils/constants";
 
 
 function App() {
-  const {isLoading, isError, data: user} = useGetUserQuery(DEFAULT_USER_ID)
+  const {data: user} = useGetUserQuery(DEFAULT_USER_ID)
 
   return (
     <Layout user={user ?? {id: 1,name: '',email: ''}}>
