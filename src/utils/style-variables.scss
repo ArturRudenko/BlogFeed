@@ -1,0 +1,23 @@
+[data-theme='light'] {
+  --background: #FAFAFA;
+  --header-bg: #E0E0E0;
+  --color-accent: #64B5F6;
+  --text-color: #28282B;
+  transition: background-color .3s linear, color .3s linear;
+}
+
+[data-theme='dark'] {
+  --background: #28282B;
+  --header-bg: #343434;
+  --color-accent: #64B5F6;
+  --text-color: #FAFAFA;
+  transition: background-color .3s linear, color .3s linear;
+}
+
+@mixin page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  color: var(--text-color);
+}

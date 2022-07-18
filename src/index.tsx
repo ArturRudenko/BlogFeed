@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './utils/style-variables.scss'
 import './index.scss';
 import App from './App';
 import {store} from "./store";

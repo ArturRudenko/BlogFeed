@@ -1,7 +1,8 @@
 import {FC} from "react";
+import styles from './post.module.scss'
 
 const Post: FC = () => (
-  <div>POST</div>
+  <div className={styles.container}>POST</div>
 )
 
 export {Post}

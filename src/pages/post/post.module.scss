@@ -1,0 +1,5 @@
+@import "src/utils/style-variables";
+
+.container {
+  @include page-container;
+}
