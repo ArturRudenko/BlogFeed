@@ -1,0 +1,25 @@
+.post {
+  margin-bottom: 20px;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  cursor: pointer;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  transition: box-shadow .3s, bottom .3s, left .3s;
+  &:hover {
+    box-shadow: rgba(100, 181, 246, 0.4) -5px 5px, rgba(100, 181, 246, 0.3) -10px 10px, rgba(100, 181, 246, 0.2) -15px 15px, rgba(100, 181, 246, 0.1) -20px 20px, rgba(100, 181, 246, 0.05) -25px 25px;
+    bottom: 15px;
+    left: 15px;
+  }
+  &Title {
+    font-size: 21px;
+    line-height: 26px;
+    padding: 10px;
+    border-bottom: 2px solid var(--text-color);
+  }
+  &Content {
+    padding: 10px;
+    line-height: 21px;
+  }
+}

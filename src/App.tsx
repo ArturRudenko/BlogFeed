@@ -10,11 +10,13 @@ import {DEFAULT_USER_ID} from "./utils/constants";
 function App() {
   const {data: user} = useGetUserQuery(DEFAULT_USER_ID)
 
+  const fallbackUserModel = {id: 1, name: '', email: ''}
+
   return (
-    <Layout user={user ?? {id: 1,name: '',email: ''}}>
+    <Layout user={user ?? fallbackUserModel}>
       <Routes>
         <Route path="/" element={<Feed />}/>
-        <Route path="/post" element={<Post />}/>
+        <Route path="/post/:id" element={<Post />}/>
       </Routes>
     </Layout>
   );

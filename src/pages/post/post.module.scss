@@ -1,4 +1,4 @@
-@import "src/utils/style-variables";
+@import "src/utils/mixins";
 
 .container {
   @include page-container;
