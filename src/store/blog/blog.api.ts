@@ -37,6 +37,6 @@ const blogApi = createApi({
   })
 })
 
-const {useGetUserQuery, useGetPostsQuery} = blogApi
+const {useGetUserQuery, useGetPostsQuery, useGetPostQuery, useGetCommentsQuery} = blogApi
 
-export {blogApi, useGetUserQuery, useGetPostsQuery}
+export {blogApi, useGetUserQuery, useGetPostsQuery, useGetPostQuery, useGetCommentsQuery}

@@ -1,0 +1,11 @@
+.comment {
+  margin-bottom: 25px;
+  &Author {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  &Message {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
